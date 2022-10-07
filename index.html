@@ -6,7 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Store Product Gallery | 7x9.dev</title>
       <link rel="stylesheet" href="style.css" />
-      <link rel="icon" href="favicon.svg" />
+      <link rel="icon" href="images/favicon.svg" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Cardo&display=swap"
+         rel="stylesheet"
+      />
    </head>
    <body>
       <div class="intro">
@@ -19,7 +25,8 @@
             <div class="product-dscr">
                <h3>Tribeca sofa</h3>
                <p class="details">
-                  Minimalist sofa lets its '70s-inspired details do the talking. Luxe sofa is low, deep and so easy to sink into.
+                  Minimalist sofa lets its '70s-inspired details do the talking.
+                  Luxe sofa is low, deep and so easy to sink into.
                </p>
             </div>
             <p class="price">$699.99</p>
@@ -27,60 +34,95 @@
 
          <div class="product item-2">
             <div class="product-dscr">
-               <h3>Tribeca sofa</h3>
+               <h3>Home accessories</h3>
                <p class="details">
-                  Minimalist sofa lets its '70s-inspired details do the talking.
-                  <br />
-                  Luxe sofa is low, deep and so easy to sink into.
+                  Whether playful or elegant, home accessories reflect your
+                  style and transform a house into a home.
                </p>
             </div>
-            <p class="price">$699.99</p>
+            <p class="price">From $69.99</p>
          </div>
 
          <div class="product item-3">
             <div class="product-dscr">
-               <h3>Tribeca sofa</h3>
+               <h3>Lounge chair</h3>
                <p class="details">
-                  Minimalist sofa lets its '70s-inspired details do the talking. Luxe sofa is low, deep and so easy to sink into.
+                  Midcentury modern design, upholstered in a plush cotton/poly
+                  blend velvet.
                </p>
             </div>
-            <p class="price">$699.99</p>
+            <p class="price">$399.99</p>
          </div>
 
          <div class="product item-4">
             <div class="product-dscr">
                <h3>Luxury bathtub</h3>
                <p class="details">
-                  Transform your bathroom into a home-spa experience with our deep soaker bathtub suitable for two.
+                  Transform your bathroom into a home-spa experience with our
+                  deep soaker bathtub suitable for two.
                </p>
             </div>
-            <p class="price">$699.99</p>
+            <p class="price">$799.99</p>
          </div>
 
          <div class="product item-5">
             <div class="product-dscr">
-               <h3>Tribeca sofa</h3>
+               <h3>Decorative vase</h3>
                <p class="details">
-                  Minimalist sofa lets its '70s-inspired details do the talking.
-                  <br />
-                  Luxe sofa is low, deep and so easy to sink into.
+                  Add some texture to your favorite blooms with this simple
+                  modern vase, perfect for fresh-cut stems.
                </p>
             </div>
-            <p class="price">$699.99</p>
+            <p class="price">$129.99</p>
          </div>
 
          <div class="product item-6">
             <div class="product-dscr">
-               <h3>Tribeca sofa</h3>
+               <h3>Leather accent chair</h3>
                <p class="details">
-                  Minimalist sofa lets its '70s-inspired details do the talking.
-                  <br />
-                  Luxe sofa is low, deep and so easy to sink into.
+                  Luxurious yet relaxed, leather accent chair is large enough
+                  for maximum lounging.
                </p>
             </div>
-            <p class="price">$699.99</p>
+            <p class="price">$499.99</p>
          </div>
       </div>
+
+      <div class="contact">
+         <h2>Get in touch</h2>
+         <form action="https://formspree.io/f/xwkzqeoy" method="POST">
+            <input type="hidden" name="_language" value="en" />
+            <input
+               class="input-email"
+               type="email"
+               name="email"
+               placeholder="Your email address"
+               required=""
+            />
+            <textarea
+               class="input-message"
+               name="message"
+               required=""
+               placeholder="Your message"
+            ></textarea>
+            <button class="btn" type="submit">Send message</button>
+         </form>
+      </div>
+      <footer class="d-flex flex-wrap justify-content-center">
+         <p class="text-light">
+            © 2022
+            <a class="webLink" href="https://www.7x9.dev/" target="_blank"
+               >7x9.dev</a
+            >
+            | Coded and designed by
+            <a
+               class="authorLink"
+               href="https://www.linkedin.com/in/valerie-di/"
+               target="_blank"
+               >Valerie&nbsp;D.</a
+            >
+         </p>
+      </footer>
       <script src="index.js"></script>
    </body>
 </html>
