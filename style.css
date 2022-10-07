@@ -1,19 +1,27 @@
 :root {
    --dscr-position: 15px;
 }
-html {
-   height: 100%;
-}
 body {
-   background: linear-gradient(to top, #09203f 0%, #537895 100%);
+   background: linear-gradient(to top, #09203f 0%, #7da4c2 100%);
+   height: 100%;
    font-size: 18px;
-   line-height: 1.75;
+   line-height: 1.6;
    color: #fff;
    margin: 0;
+   font-family: "Cardo", serif;
+}
+h1,
+h2,
+h3 {
+   font-weight: 400;
 }
 h1 {
-   font-size: 60px;
+   font-size: 64px;
    margin: 0;
+}
+h2 {
+   font-size: 48px;
+   margin: 0 0 20px 0;
 }
 h3 {
    font-size: 36px;
@@ -28,7 +36,7 @@ h3 {
    justify-content: center;
    align-items: center;
    margin-bottom: 50px;
-   padding-top: 70px;
+   padding-top: 75px;
 }
 .intro p {
    margin: 0;
@@ -37,7 +45,7 @@ h3 {
 .product-gallery {
    display: flex;
    gap: 5px;
-   padding: 20px;
+   padding: 10px;
 }
 .product {
    height: 70vh;
@@ -53,21 +61,22 @@ h3 {
    background-color: #fff;
 }
 .product-dscr {
-   top:  var(--dscr-position);
+   top: var(--dscr-position);
    padding: 30px;
-   width: 65%;
+   width: 70%;
+   opacity: 0;
 }
 .details {
-   margin: 5px 0 0 0;
+   margin: 8px 0 0 0;
    color: #000;
 }
 .price {
    font-size: 30px;
-   font-weight: bold;
-   bottom:  var(--dscr-position);
+   bottom: var(--dscr-position);
    margin: 0;
    padding: 10px 26px;
    color: #000;
+   opacity: 0;
 }
 .item-1 {
    background-image: url(images/item-1.jpg);
@@ -89,5 +98,74 @@ h3 {
 }
 .selected {
    flex: 2.5;
-   transition: all 400ms ease-out;
+   transition: all 350ms ease-out;
+}
+.selected .product-dscr,
+.selected .price {
+   transition: all 200ms ease-in;
+   opacity: 1;
+}
+.contact {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 60px 0 90px 0;
+}
+form {
+   display: flex;
+   flex-direction: column;
+}
+.input-email,
+.input-message {
+   border: none;
+   width: 600px;
+   padding: 15px 20px;
+   font-family: "Cardo", serif;
+   font-size: 17px;
+}
+.input-email,
+.input-message {
+   margin-bottom: 10px;
+}
+.input-message {
+   height: 120px;
+}
+.btn {
+   font-family: "Cardo", serif;
+   font-size: 20px;
+   border: 2px solid #fff;
+   color: #fff;
+   background: none;
+   padding: 12px 30px;
+   flex: 1;
+   cursor: pointer;
+}
+.btn:hover {
+   background: #eee8a9;
+   color: #000;
+   border: 2px solid #eee8a9;
+   transition: all 450ms ease-in-out;
+}
+footer {
+   height: 50px;
+   background: #071830;
+   color: #fff;
+   padding: 8px;
+   font-size: 16px;
+   text-align: center;
+}
+.webLink {
+   color: #fff;
+   text-decoration: none;
+}
+.authorLink {
+   color: #8ec5fc;
+   text-decoration: none;
+}
+.webLink:hover {
+   color: #fff;
+}
+.authorLink:hover {
+   color: #eee8a9;
 }
