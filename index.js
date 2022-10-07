@@ -1,6 +1,6 @@
 const items = document.querySelectorAll(".product");
 items.forEach((item) => {
-   item.addEventListener("mouseover", () => {
+   item.addEventListener("click", () => {
       removeFocus();
       item.classList.add("selected");
    });
