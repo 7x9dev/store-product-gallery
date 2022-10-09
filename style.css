@@ -54,6 +54,9 @@ h3 {
    flex: 1;
    position: relative;
 }
+.product:hover {
+   cursor: pointer;
+}
 .product-dscr,
 .price {
    position: absolute;
@@ -99,6 +102,9 @@ h3 {
 .selected {
    flex: 2.5;
    transition: all 350ms ease-out;
+}
+.selected:hover{
+   cursor: auto;
 }
 .selected .product-dscr,
 .selected .price {
